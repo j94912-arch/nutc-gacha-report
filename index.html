@@ -271,6 +271,91 @@
             width: 100%;
             transition: .45s
         }
+
+        .tour-layout{
+            width:min(1180px,86vw);
+            margin:30px auto 0;
+            display:grid;
+            grid-template-columns:.85fr 1.15fr;
+            gap:54px;
+            align-items:center;
+        }
+        
+        .map-box{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        
+        .map-box img{
+            width:min(430px,32vw);
+            max-height:520px;
+            object-fit:contain;
+            filter:drop-shadow(0 24px 45px rgba(20,40,70,.14));
+        }
+        
+        .tour-card{
+            background:rgba(255,255,255,.84);
+            border:1px solid rgba(10,46,107,.12);
+            border-radius:34px;
+            padding:44px 50px;
+            box-shadow:0 28px 70px rgba(20,40,70,.10);
+        }
+        
+        .tour-card h3{
+            font-size:clamp(38px,3vw,58px);
+            margin:0 0 30px;
+            color:#082a55;
+            font-weight:1000;
+            text-align:center;
+        }
+        
+        .tour-stats{
+            display:grid;
+            grid-template-columns:repeat(4,1fr);
+            gap:14px;
+            margin-bottom:30px;
+        }
+        
+        .tour-stats div{
+            background:#f7f9fc;
+            border-radius:22px;
+            padding:18px 8px;
+            text-align:center;
+        }
+        
+        .tour-stats b{
+            display:block;
+            font-size:clamp(36px,3.2vw,58px);
+            color:#005BAC;
+            line-height:1;
+        }
+        
+        .tour-stats span{
+            display:block;
+            margin-top:8px;
+            font-size:clamp(14px,1.1vw,20px);
+            font-weight:900;
+            color:#5f6f86;
+        }
+        
+        .tour-list{
+            display:grid;
+            gap:14px;
+        }
+        
+        .tour-list p{
+            margin:0;
+            font-size:clamp(18px,1.3vw,25px);
+            font-weight:900;
+            color:#5f6f86;
+            line-height:1.55;
+        }
+        
+        .tour-list b{
+            color:#d4a02f;
+            margin-right:12px;
+        }
         
         .cards3 {
             display: grid;
@@ -960,6 +1045,41 @@
                         </div>
                     </div>
                     <div class="note">按下一頁，依序聚焦</div>
+                </div>
+            </div>
+        </section>
+        <section class="slide" data-tag="巡迴招生規劃">
+            <div class="brand">
+                <div class="logo">N</div>
+                <div>國立臺中科技大學 商學院</div>
+            </div>
+            <div class="tag">巡迴招生規劃</div>
+        
+            <div style="width:100%">
+                <h1 class="mid-title">12 所高中職巡迴宣傳</h1>
+        
+                <div class="tour-layout">
+                    <div class="map-box">
+                        <img src="taiwan-map.png" alt="台灣巡迴地圖">
+                    </div>
+        
+                    <div class="tour-card">
+                        <h3>扭蛋機配置</h3>
+        
+                        <div class="tour-stats">
+                            <div><b>7</b><span>台扭蛋機</span></div>
+                            <div><b>6</b><span>台巡迴校園</span></div>
+                            <div><b>2</b><span>台／每校</span></div>
+                            <div><b>2</b><span>週／每校</span></div>
+                        </div>
+        
+                        <div class="tour-list">
+                            <p><b>1–2 週</b> 士林高商、松山家商、三重商工</p>
+                            <p><b>3–4 週</b> 新竹高商、中壢高商、臺中家商</p>
+                            <p><b>5–6 週</b> 豐原高商、彰化高商、嘉義高商</p>
+                            <p><b>7–8 週</b> 臺南高商、高雄高商、鳳山商工</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
