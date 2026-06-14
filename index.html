@@ -272,6 +272,114 @@
             transition: .45s
         }
 
+.tour-layout{
+    width:min(1180px,86vw);
+    margin:30px auto 0;
+    display:grid;
+    grid-template-columns:0.9fr 1.15fr;
+    gap:56px;
+    align-items:center;
+}
+
+.taiwan-map{
+    height:520px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.taiwan-map svg{
+    height:100%;
+    max-width:100%;
+}
+
+.map-shape{
+    fill:rgba(255,255,255,.82);
+    stroke:#d7cbb8;
+    stroke-width:4;
+    filter:drop-shadow(0 22px 40px rgba(20,40,70,.13));
+}
+
+.pin{
+    fill:#d4a02f;
+    stroke:white;
+    stroke-width:4;
+    filter:drop-shadow(0 6px 10px rgba(0,0,0,.18));
+}
+
+.pin.north{ fill:#005BAC; }
+.pin.mid{ fill:#d4a02f; }
+.pin.south{ fill:#ff8a2a; }
+
+.taiwan-map text{
+    font-size:22px;
+    font-weight:900;
+    fill:#0b2d59;
+}
+
+.tour-card{
+    background:rgba(255,255,255,.82);
+    border:1px solid rgba(10,46,107,.12);
+    border-radius:34px;
+    padding:44px 50px;
+    box-shadow:0 28px 70px rgba(20,40,70,.10);
+}
+
+.tour-card h3{
+    font-size:clamp(38px,3vw,58px);
+    margin:0 0 30px;
+    color:#082a55;
+    font-weight:1000;
+    text-align:center;
+}
+
+.tour-stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:14px;
+    margin-bottom:28px;
+}
+
+.tour-stats div{
+    background:#f7f9fc;
+    border-radius:22px;
+    padding:18px 10px;
+    text-align:center;
+}
+
+.tour-stats b{
+    display:block;
+    font-size:clamp(36px,3.2vw,58px);
+    color:#005BAC;
+    line-height:1;
+}
+
+.tour-stats span{
+    display:block;
+    margin-top:8px;
+    font-size:clamp(14px,1.1vw,20px);
+    font-weight:900;
+    color:#5f6f86;
+}
+
+.tour-list{
+    display:grid;
+    gap:14px;
+}
+
+.tour-list p{
+    margin:0;
+    font-size:clamp(18px,1.3vw,25px);
+    font-weight:900;
+    color:#5f6f86;
+    line-height:1.55;
+}
+
+.tour-list b{
+    color:#d4a02f;
+    margin-right:12px;
+}
+        
         .cards3 {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
